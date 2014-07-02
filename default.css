@@ -1,0 +1,224 @@
+html, body
+{
+	display: block;
+	float:left;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	width:100%;
+	height: 100%;
+	background: url("images/background.png");
+	-webkit-app-region: drag;
+	-webkit-user-select: none;
+	font-family: 'Montserrat', sans-serif;
+	color:#fff;
+}
+
+#header
+{
+	display:block;
+	height:24px;
+	width:100%;
+	float:left;
+	position: absolute;
+}
+#about, #back
+{
+	display:block;
+	position:absolute;
+	top:5px;
+	right:10px;
+	-webkit-app-region: no-drag;
+	font-size:12px;
+}
+
+#windowClose, #windowMinimize
+{
+	float:left;
+	width:24px;
+	height:24px;
+	-webkit-app-region: no-drag;
+}
+
+#windowClose
+{
+	position: absolute;
+	top:0;
+	left:0;
+	background:url("images/close.png");
+}
+
+#windowMinimize
+{
+	position: absolute;
+	top: 0;
+	left: 24px;
+	background:url("images/minimize.png");
+}
+#windowClose:hover
+{
+	background:url("images/close-hover.png");
+}
+
+#windowMinimize:hover
+{
+	background:url("images/minimize-hover.png");
+}
+
+ul,li,a,ul>li,ul>li>a 
+{
+	text-decoration: none;
+	list-style: none;
+	color:#fff !important;
+}
+form
+{
+	float:left;
+	margin:0;
+	padding: 0;
+	border:none;
+}
+input
+{
+	font-size: 16px;
+}
+
+#delete, #clear
+{
+	display:block;
+	width:73px;
+	height:73px;
+	border:none;
+	text-decoration: none;
+	float:left;
+	color:#ffffff;
+	text-indent: -9999px;
+	-webkit-app-region: no-drag;
+}
+
+#delete
+{
+	background: url("images/delete-all.png") center center;
+}
+
+#delete:active
+{
+	background: url("images/delete-all-clicked.png") center center;
+}
+
+#clear
+{
+	background: url("images/clear.png") center center;
+}
+
+#clear:active
+{
+	background: url("images/clear-clicked.png") center center;
+}
+
+#divide, #times, #nine, #eight, #seven, #seven, #six,
+#five, #four, #three, #two, #one, #plus, #minus, #decimal
+{
+	display: block;
+	width:73px;
+	height:73px;
+	float:left;
+	border: none;
+	background: url("images/button.png");
+	color:#ffffff;
+	-webkit-app-region: no-drag;
+}
+#divide:focus, #times:focus, #nine:focus, #eight:focus, #seven:focus, #seven:focus, #six:focus,
+#five:focus, #four:focus, #three:focus, #two:focus, #one:focus, #plus:focus, #minus:focus, #decimal:focus,
+#zero:focus, #clear:focus, #result:focus, #delete
+{
+	border:none;
+	outline: 0;
+
+}
+#divide:active, #times:active, #nine:active, #eight:active, #seven:active, #seven:active, #six:active,
+#five:active, #four:active, #three:active, #two:active, #one:active, #plus:active, #minus:active, #decimal:active,
+#zero:active
+{
+	outline:0;
+	background:url("images/btn-clicked.png");
+}
+
+#zero
+{
+	display: block;
+	width: 147px;
+	height: 73px;
+	float:left;
+	border:none;
+	background:url("images/zero-btn.png");
+	color:#ffffff;
+	-webkit-app-region: no-drag;
+}
+
+#doit
+{
+	display: block;
+	width:73px;
+	height:147px;
+	border:none;
+	color:#ffffff;
+	background: url("images/equal.png") center bottom;
+	text-indent: -9999px;
+	-webkit-app-region: no-drag;
+	outline: 0;
+}
+
+#doit:active
+{
+	background:url("images/equal-clicked.png") center bottom;
+}
+
+#result
+{
+	display: block;
+	width:295px;
+	height: 100px;
+	float:left;
+	border: none;
+	font-size: 36px;
+	background: none;
+	color:#ffffff;
+	padding:5px;
+}
+
+
+#divide, #times, #nine, #eight, #minus,
+#six, #five, #two, #plus
+{
+	margin: 0 0 1px 1px;
+}
+#three
+{
+	margin:0 1px 1px 1px;
+}
+#decimal, #clear
+{
+	margin:0 0 0 1px;
+}
+
+span.logo
+{
+	display:block;
+	width:138px;
+	height: 138px;
+	background: url("images/icon.png");
+	margin:30px auto 0 auto;
+}
+
+p
+{
+	padding:10px;
+	margin: 10px auto;
+}
+div.title
+{
+	text-align:center;
+	display:block;
+	width:100%;
+}

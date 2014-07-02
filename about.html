@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <link rel='stylesheet' href='default.css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+        <script>
+
+        var nw = require('nw.gui');
+        var win = nw.Window.get();
+        
+    </script>
+    
+    </head>
+<body>
+
+<header>
+        <ul>
+        	<li><a href="#" title="Close" id="windowClose"></a></li>
+            <li><a href="#" title="Minimize" id="windowMinimize"></a></li>
+            <li><a href="index.html" title="Back" id="back">Back</a></li>
+        </ul>
+
+</header>
+
+<div id="logo">
+<span class="logo"></span>
+<div class="title"><font size="5pt">Calculator</font></div>
+    <p>
+<b>Icons and Design</b></br><font size="2pt">Halcea iulian calin</font></br></br>
+<b>Development</b></br><font size="2pt">Halcea iulian calin with help from </br>Sergiu Sandor</font></br></br>
+<b>Inpiration</b></br><font size="2pt">Ubuntu is a big source of inspiration every day</font></br></br>
+<b>Made With</b></br><font size="2pt">node-webkit, Sublime Text 3, Inkscape</font>
+    </p>
+
+    <span>
+
+    </span>
+
+</div>
+
+
+</body>
+    <script>
+    //Minimize
+    document.getElementById('windowMinimize').onclick = function()
+    {
+        win.minimize();
+    };
+
+     //Close
+    document.getElementById('windowClose').onclick = function()
+    {
+    	win.close();
+    };
+
+</script>
+</html>

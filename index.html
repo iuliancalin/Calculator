@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <link rel='stylesheet' href='default.css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+    <script>
+
+        var nw = require('nw.gui');
+        var win = nw.Window.get();
+
+    </script>
+    </head>
+<body>
+
+<header>
+        <ul>
+            <li><a href="#" title="Close" id="windowClose"></a></li>
+            <li><a href="#" title="Minimize" id="windowMinimize"></a></li>
+            <li><a href="about.html" title="About" id="about">About</a></li>
+        </ul>
+
+</header>
+
+<form NAME="Calc">
+<INPUT id="result" TYPE="text"   NAME="Input" Size="4" readonly>
+<INPUT id="delete" TYPE="button" NAME="" VALUE="delete" OnClick="Calc.Input.value = ''">
+<INPUT id="clear" TYPE="button" NAME="clear" VALUE="c" OnClick="Calc.Input.value = Calc.Input.value.substr(0, Calc.Input.value.length-1);">
+<INPUT id="divide" TYPE="button" NAME="div"   VALUE="  /  " OnClick="Calc.Input.value += '/'">
+<INPUT id="times" TYPE="button" NAME="times" VALUE="  *  " OnClick="Calc.Input.value += '*'">
+<INPUT id="seven" TYPE="button" NAME="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'">
+<INPUT id="eight" TYPE="button" NAME="eight" VALUE="  8  " OnCLick="Calc.Input.value += '8'">
+<INPUT id="nine" TYPE="button" NAME="nine"  VALUE="  9  " OnClick="Calc.Input.value += '9'">
+<INPUT id="minus" TYPE="button" NAME="minus" VALUE="  -  " OnClick="Calc.Input.value += '-'">
+<INPUT id="four" TYPE="button" NAME="four"  VALUE="  4  " OnClick="Calc.Input.value += '4'">
+<INPUT id="five" TYPE="button" NAME="five"  VALUE="  5  " OnCLick="Calc.Input.value += '5'">
+<INPUT id="six" TYPE="button" NAME="six"s   VALUE="  6  " OnClick="Calc.Input.value += '6'">
+<INPUT id="plus" TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += '+'">
+<INPUT id="one" TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'">
+<INPUT id="two" TYPE="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'">
+<INPUT id="three" TYPE="button" NAME="three" VALUE="  3  " OnClick="Calc.Input.value += '3'">
+<INPUT id="zero" TYPE="button" NAME="zero"  VALUE="  0  " OnClick="Calc.Input.value += '0'">
+<INPUT id="decimal" TYPE="button" NAME="decimal"   VALUE="  .  " OnClick="Calc.Input.value += '.'">
+<INPUT id="doit" TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
+</FORM>
+<script>
+    //Minimize
+    document.getElementById('windowMinimize').onclick = function()
+    {
+        win.minimize();
+    };
+
+     //Close
+    document.getElementById('windowClose').onclick = function()
+    {
+    	win.close();
+    };
+
+</script>
+
+    </body>
+</html>

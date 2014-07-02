@@ -1,0 +1,16 @@
+{
+	"main": "index.html",
+	"name": "Calculator",
+	"window":
+	{
+		"width":295,
+		"height":495,
+		"toolbar": false,
+		"frame"  : false,
+		"resizable": false,
+		"position": "center",
+		"title": "Calculator",
+		"icon": "images/icon.png"
+	}
+
+}
